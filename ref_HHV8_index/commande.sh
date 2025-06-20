@@ -1,1 +1,0 @@
-godjob create -n indexation_star -t snakemake,indexation_star --external_image -v home -v scratch -v annotations -c 1 -r 1 -i sequoia-docker-tools/star:2.7.8a-1 --cmd "command Line"
