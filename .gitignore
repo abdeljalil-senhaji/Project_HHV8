@@ -1,6 +1,8 @@
 # file
 *.fastq
+*.fq.gz
 *.fq
+*.fastq.gz
 *.bam
 *.cram
 *.vcf
