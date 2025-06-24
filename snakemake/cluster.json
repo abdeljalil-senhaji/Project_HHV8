@@ -108,7 +108,7 @@
   "star": {
     "name": "star",
     "tags": "snakemake,star",
-    "cpu": 4,
+    "cpu": 8,
     "mem": 60,
     "image": "gitlab-bioinfo.aphp.fr:5000/sequoia-docker-tools/star:2.7.8a-1"
   },
