@@ -1,13 +1,14 @@
 rule featurecounts:
     input:
-        bam = "{prefix}/{sample}/{sample}_dedup_reads.bam"
+        bam = "{prefix}/{sample}/{sample}_Aligned.out.bam"
     output:
-        counts = "{prefix}/{sample}/{sample}_featurecounts.txt"
+        counts = "{prefix}/{sample}/featurecounts/{sample}_counts.txt"
+        #summary = "{prefix}/{sample}/featurecounts/{sample}_summary.txt"
     log:
-        "{prefix}/{sample}/logs/{sample}.featurecounts.log"
+        "{prefix}/logs/{sample}.featurecounts.log"
     params:
-        path_gtf = config["general_informations"]["gtf"]
+        path_gtf = config["general_informations"]["gtf_hhv8"]
     shell:
         """
-        featureCounts -T 4 -p -a {params.path_gtf} -o {output.counts} {input.bam} 2>&1 | tee {log}
+        featureCounts -a {params.path_gtf} -o {output.counts} {input.bam} 2>&1 | tee {log}
         """

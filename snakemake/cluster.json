@@ -1,7 +1,7 @@
 {
   "__default__": {
-    "name": "Metagenomics",
-    "tags": "snakemake,Metagenomics",
+    "name": "RNAseq",
+    "tags": "snakemake,RNAseq",
     "volume_snakemake": "snakemake",
     "volume_home": "home",
     "volume_scratch": "scratch",

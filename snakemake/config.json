@@ -105,16 +105,7 @@
     "blast": {
         "OPTIONS": "-task megablast -num_threads 8 -evalue 10e-10 -outfmt \"7 qseqid sseqid sstart send evalue bitscore slen staxids\" -max_target_seqs 1 -max_hsps 1"
     },
-    "blast_fungi": {
-        "OPTIONS": "-task megablast -num_threads 8 -evalue 10e-10 -outfmt \"7 qseqid sseqid sstart send evalue bitscore slen staxids\" -max_target_seqs 1 -max_hsps 1"
-    },
-    "extract_info": {
-        "OPTIONS": ""
-    },
-    "count_info": {
-        "OPTIONS": ""
-    },
-    "getnames": {
-        "OPTIONS": ""
+    "featurecounts": {
+        "OPTIONS": "-T 4 -P -g gene_id"
     }
 }

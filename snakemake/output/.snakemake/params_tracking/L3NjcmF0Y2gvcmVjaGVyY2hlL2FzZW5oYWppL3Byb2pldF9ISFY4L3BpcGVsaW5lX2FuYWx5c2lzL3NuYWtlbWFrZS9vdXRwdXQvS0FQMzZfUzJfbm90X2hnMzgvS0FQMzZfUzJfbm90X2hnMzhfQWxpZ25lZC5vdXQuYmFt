@@ -1,0 +1,2 @@
+'--runThreadN 8 --readFilesCommand zcat --outSAMtype BAM Unsorted --quantMode GeneCounts'
+'/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/hhv8_star_index'

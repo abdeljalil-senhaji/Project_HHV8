@@ -1,0 +1,15 @@
+Status	/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/output/KAP_63_S5_not_hg38/KAP_63_S5_not_hg38_Aligned.out.bam
+Assigned	72585
+Unassigned_Unmapped	0
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	140572
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	88988
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	17863
