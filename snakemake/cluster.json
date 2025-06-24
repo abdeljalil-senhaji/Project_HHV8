@@ -126,32 +126,11 @@
     "mem": 16,
     "image": "sequoia-docker-tools/blast:2.12.0-1"
   },
-  "blast_fungi": {
-    "name": "blast_fungi",
-    "tags": "snakemake,blast_fungi",
-    "cpu": 8,
-    "mem": 16,
-    "image": "sequoia-docker-tools/blast:2.12.0-1"
-  },
-  "extract_info": {
-    "name": "extract_info",
-    "tags": "snakemake,extract_info",
+  "featurecounts": {
+    "name": "featurecounts",
+    "tags": "snakemake,featurecounts",
     "cpu": 4,
     "mem": 8,
-    "image": "sequoia-docker-tools/metagenomic-utils-sls:0.0.4-1"
-  },
-  "count_info": {
-    "name": "count_info",
-    "tags": "snakemake,count_info",
-    "cpu": 1,
-    "mem": 2,
-    "image": "sequoia-docker-tools/snakemake:3.9.0-5"
-  },
-  "getnames": {
-    "name": "getnames",
-    "tags": "snakemake,getnames",
-    "cpu": 2,
-    "mem": 4,
-    "image": "sequoia-docker-tools/metagenomic-utils-sls:0.0.4-1"
+    "image": "sequoia-docker-tools/subread:2.0.1-1"
   }
 }

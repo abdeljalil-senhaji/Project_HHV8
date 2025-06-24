@@ -13,8 +13,9 @@ include: rulePath+"/iget_samples_rule"
 #include: rulePath+"/dedupe_rule"
 #include: rulePath+"/trimmomatic_rule"
 #include: rulePath+"/fastqc_rule"
-include: rulePath+"/star_rule"
 #include: rulePath+"/spades_rule"
+include: rulePath+"/star_rule"
+include: rulePath+"/featurecounts_rule"
 #============================= RECUP SAMPLES INFORMATIOS =================================#
 
 mate_ids = ["R1","R2"]
@@ -38,12 +39,14 @@ for sample_id in os.listdir(directory) :
 #fastqc = expand((output_path+"/{sample_id}/fastqc/{sample_id}{mate_id}_paired_fastqc.html"), sample_id = sample_ids, mate_id = mate_ids),
 #spades = expand((output_path+"/{sample_id}/{sample_id}_contigs.fasta"),sample_id=sample_ids)
 
-star = expand((output_path+"/{sample_id}/{sample_id}_Aligned.sortedByCoord.out.bam"),sample_id=sample_ids)
+star = expand((output_path+"/{sample_id}/{sample_id}_Aligned.out.bam"),sample_id=sample_ids)
+featurecounts = 
 #=================================================== Rule all ==================================================#
 
 rule all:
     input:
 #         fastqc,
-          star
+          star,
+          featurecounts
     shell:
-        "touch "+output_path+"/done"
+        "touch "+output_path+"/done"  

@@ -6,7 +6,7 @@ rule star:
         R2 = "{prefix}/{sample}/{sample}.R2.fastq.gz"
     output:
         #"{prefix}/{sample}/{sample}_star.bam"
-        "{prefix}/{sample}/{sample}_Aligned.sortedByCoord.out.bam"
+        "{prefix}/{sample}/{sample}_Aligned.out.bam"
     log:
         "{prefix}/logs/{sample}.star.log"
     params:
