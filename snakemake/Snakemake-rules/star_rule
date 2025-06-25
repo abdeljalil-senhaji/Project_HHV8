@@ -6,13 +6,20 @@ rule star:
         R2 = "{prefix}/{sample}/{sample}.R2.fastq.gz"
     output:
         #"{prefix}/{sample}/{sample}_star.bam"
-        "{prefix}/{sample}/{sample}_Aligned.out.bam"
+        #"{prefix}/{sample}/{sample}_Aligned.out.bam"
+        "{prefix}/{sample}/{sample}_Aligned.sortedByCoord.out.bam"
     log:
         "{prefix}/logs/{sample}.star.log"
     params:
         star_options = config["star"]["OPTIONS"],
         path_ref = config["general_informations"]["star_index_hhv8"]
     shell:
+        #STAR --genomeDir {params.path_ref} {params.star_options} --readFilesIn {input.R1}  {input.R2} --outFileNamePrefix {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_ 2>&1 | tee -a {log}
         """
-        STAR --genomeDir {params.path_ref} {params.star_options} --readFilesIn {input.R1}  {input.R2} --outFileNamePrefix {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_ 2>&1 | tee -a {log}
+        STAR --genomeDir {params.path_ref} {params.star_options} \
+            --readFilesIn {input.R1} {input.R2} \
+            --outFileNamePrefix {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_ \
+            2>&1 | tee -a {log} 
+        mkdir -p {wildcards.prefix}/{wildcards.sample}/count_star && \
+        mv {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_ReadsPerGene.out.tab {wildcards.prefix}/{wildcards.sample}/count_star/
         """

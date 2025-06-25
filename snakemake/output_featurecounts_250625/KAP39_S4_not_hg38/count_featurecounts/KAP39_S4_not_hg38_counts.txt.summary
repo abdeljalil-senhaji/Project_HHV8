@@ -1,0 +1,15 @@
+Status	/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/output/KAP39_S4_not_hg38/KAP39_S4_not_hg38_Aligned.sortedByCoord.out.bam
+Assigned	5077
+Unassigned_Unmapped	0
+Unassigned_Read_Type	0
+Unassigned_Singleton	0
+Unassigned_MappingQuality	0
+Unassigned_Chimera	0
+Unassigned_FragmentLength	0
+Unassigned_Duplicate	0
+Unassigned_MultiMapping	9740
+Unassigned_Secondary	0
+Unassigned_NonSplit	0
+Unassigned_NoFeatures	13353
+Unassigned_Overlapping_Length	0
+Unassigned_Ambiguity	1018

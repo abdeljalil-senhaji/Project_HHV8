@@ -1,8 +1,8 @@
 rule featurecounts:
     input:
-        bam = "{prefix}/{sample}/{sample}_Aligned.out.bam"
+        bam = "{prefix}/{sample}/{sample}_Aligned.sortedByCoord.out.bam"
     output:
-        counts = "{prefix}/{sample}/featurecounts/{sample}_counts.txt"
+        counts = "{prefix}/{sample}/count_featurecounts/{sample}_counts.txt"
         #summary = "{prefix}/{sample}/featurecounts/{sample}_summary.txt"
     log:
         "{prefix}/logs/{sample}.featurecounts.log"
