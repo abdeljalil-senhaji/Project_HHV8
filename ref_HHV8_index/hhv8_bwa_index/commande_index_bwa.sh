@@ -1,0 +1,1 @@
+godjob create -n indexation_bwa -t snakemake,indexation_bwa --external_image -v home -v scratch -v annotations -c 1 -r 1 -i sequoia-docker-tools/bwa:0.7.15-1 --cmd "bwa index /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/hhv8_bwa_index/NC_009333.1.fasta"

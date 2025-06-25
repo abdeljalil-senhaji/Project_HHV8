@@ -52,51 +52,16 @@
   "bwa_mem": {
      "name": "bwa_mem",
      "tags": "snakemake,bwa_mem",
-      "cpu": 8,
-      "mem": 40,
+      "cpu": 6,
+      "mem": 16,
     "image": "sequoia-docker-tools/bwa:0.7.15-1"
   },
-  "samtools_sam_to_bam": {
-     "name": "samtools_sam_to_bam",
-     "tags": "snakemake,samtools_sam_to_bam",
+  "samtools_process": {
+     "name": "samtools_process",
+     "tags": "snakemake,samtools_process",
      "cpu": 1,
      "mem": 4,
      "image": "sequoia-docker-tools/samtools:1.11-1"
-  },
-  "samtools_flagstat": {
-     "name": "samtools_flagstat",
-     "tags": "snakemake,samtools_flagstat",
-     "cpu": 1,
-     "mem": 1,
-     "image": "sequoia-docker-tools/samtools:1.11-1"
-  },
-  "samtools_view": {
-      "name": "samtools_view",
-      "tags": "snakemake,samtools_view",
-      "cpu": 1,
-      "mem": 4,
-      "image": "sequoia-docker-tools/samtools:1.11-1"
-  },
-  "samtools_flagstat1": {
-     "name": "samtools_flagstat1",
-     "tags": "snakemake,samtools_flagstat1",
-     "cpu": 1,
-     "mem": 1,
-     "image": "sequoia-docker-tools/samtools:1.11-1"
-  },
-  "samtools_sort": {
-      "name": "samtools_sort",
-      "tags": "snakemake,samtools_sort",
-      "cpu": 1,
-      "mem": 4,
-      "image": "sequoia-docker-tools/samtools:1.11-1"
-  },
-  "samtools_get_unmapped": {
-      "name": "samtools_get_unmapped",
-      "tags": "snakemake,samtools_get_unmapped",
-      "cpu": 1,
-      "mem": 4,
-      "image": "sequoia-docker-tools/samtools:1.11-1"
   },
   "spades": {
     "name": "spades",

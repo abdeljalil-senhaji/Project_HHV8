@@ -1,0 +1,15 @@
+rule samtools_process:
+    input:
+        sam="{prefix}/{sample}/{sample}.sam"
+    output:
+        out1 = "{prefix}/{sample}/{sample}.ordered.bam"
+    log:
+        "{prefix}/logs/{sample}.samtools_process.log"
+    params:
+        samtools_sort_options=config["samtools_process"]["OPTIONS"]
+    shell:
+        """
+        docker_wrapper -c "samtools view -b -o {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}.bam {input.sam}" &&
+        docker_wrapper -c "samtools sort -n -o {output.out1}  {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}.bam " 2>&1 | tee -a {log} &&
+        rm  {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}.bam 
+        """

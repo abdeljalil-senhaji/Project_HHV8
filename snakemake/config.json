@@ -16,6 +16,7 @@
       "gtf": "/data/annotations/Human/GRCh38/index/star/seqoia/2.7.8a/Homo_sapiens.GRCh38.99.gtf",
       "star_index_hhv8": "/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/hhv8_star_index",
       "gtf_hhv8": "/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/NC_009333.1.gtf",
+      "fasta_hhv8": "/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/hhv8_bwa_index/NC_009333.1.fasta",
       "DATABASE-Fungi": "/scratch/recherche/asenhaji/v7_pipMeta_4Kingdoms/db/JGI_fungi/add_genome_ncbi_fungi_1kb.fasta",
       "DATABASE-Parasite": "/scratch/recherche/asenhaji/v7_pipMeta_4Kingdoms/db/Parasite_db/add_2strain_verified2_all_veu_worm1_plasmo_ncbi_1kb.fasta",
       "SQLITE": "/scratch/recherche/asenhaji/v7_pipMeta_4Kingdoms/db/NCBITaxa/.etetoolkit/taxa.sqlite",
@@ -75,23 +76,8 @@
     "bwa_mem": {
         "OPTIONS": "-t 8 -M"
     },
-    "samtools_sam_to_bam": {
-        "OPTIONS": "-b"
-    },
-    "samtools_flagstat": {
+    "samtools_process": {
         "OPTIONS": ""
-    },
-    "samtools_flagstat1": {
-        "OPTIONS": ""
-    },
-    "samtools_view": {
-        "OPTIONS": ""
-    },
-    "samtools_sort": {
-        "OPTIONS": ""
-    },
-    "samtools_get_unmapped": {
-        "OPTIONS":  "-N"
     },
     "spades": {
         "OPTIONS": "-t 8 --careful"
