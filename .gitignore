@@ -1,0 +1,52 @@
+# file
+*.fastq.gz
+*.fastq
+*.fq
+*.bam
+*.cram
+*.vcf
+*.bed
+*.sam
+*.bai
+*.tbi
+*.idx
+*.gz
+*.taxids.txt
+*.zip
+*.jalil
+*.err
+*.fasta
+*.fa
+*.csv
+*.qual.txt
+*.log
+*.err
+*.tab
+*.out
+*_counts.txt
+*.summary
+ 
+# folder  
+/database/
+/db/
+/output/
+/results/
+*.snakemake/
+/ListTaxIdV1/
+
+# file temporaires
+*.tmp
+*.temp
+*.swp
+
+
+# Environnements virtuels
+/venv/
+/env/
+__pycache__
+
+# OS files
+.DS_Store
+Thumbs.db
+save_git.sh
+
