@@ -1,1 +1,0 @@
-cp /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/data/KAP_60_S4_not_hg38.R1.fastq.gz /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/output/KAP_60_S4_not_hg38/KAP_60_S4_not_hg38.R1.fastq.gz  | tee -a /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/output/logs/KAP_60_S4_not_hg38_R1_iget_samples.log

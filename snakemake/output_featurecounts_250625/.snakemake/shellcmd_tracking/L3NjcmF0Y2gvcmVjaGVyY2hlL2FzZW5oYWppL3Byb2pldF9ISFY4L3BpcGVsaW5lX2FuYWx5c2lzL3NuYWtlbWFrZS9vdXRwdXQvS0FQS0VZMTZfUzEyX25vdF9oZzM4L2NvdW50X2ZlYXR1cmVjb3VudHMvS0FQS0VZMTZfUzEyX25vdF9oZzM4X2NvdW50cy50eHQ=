@@ -1,3 +1,0 @@
-
-        featureCounts -a /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/NC_009333.1.gtf -o /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/output/KAPKEY16_S12_not_hg38/count_featurecounts/KAPKEY16_S12_not_hg38_counts.txt /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/output/KAPKEY16_S12_not_hg38/KAPKEY16_S12_not_hg38_Aligned.sortedByCoord.out.bam 2>&1 | tee /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/output/logs/KAPKEY16_S12_not_hg38.featurecounts.log
-        
