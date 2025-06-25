@@ -2,8 +2,7 @@ rule featurecounts:
     input:
         bam = "{prefix}/{sample}/{sample}.ordered.bam"
     output:
-        counts = "{prefix}/{sample}/count_featurecounts/{sample}_counts.txt"
-        #summary = "{prefix}/{sample}/featurecounts/{sample}_summary.txt"
+        counts = "{prefix}/count_featurecounts/{sample}_counts.txt"
     log:
         "{prefix}/logs/{sample}.featurecounts.log"
     params:

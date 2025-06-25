@@ -20,6 +20,6 @@ rule star:
             --readFilesIn {input.R1} {input.R2} \
             --outFileNamePrefix {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_ \
             2>&1 | tee -a {log} 
-        mkdir -p {wildcards.prefix}/{wildcards.sample}/count_star && \
-        mv {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_ReadsPerGene.out.tab {wildcards.prefix}/{wildcards.sample}/count_star/
+        mkdir -p {wildcards.prefix}/count_star && \
+        mv {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_ReadsPerGene.out.tab {wildcards.prefix}/count_star/
         """
