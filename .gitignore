@@ -25,7 +25,17 @@
 *.out
 *_counts.txt
 *.summary
- 
+*.ipynb
+*.html
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
+*.tsv
+*.csv
+
 # folder  
 /database/
 /db/
