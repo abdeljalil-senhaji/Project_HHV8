@@ -25,7 +25,6 @@
 *.out
 *_counts.txt
 *.summary
-*.ipynb
 *.html
 *.pdf
 *.png
@@ -36,7 +35,7 @@
 *.tsv
 *.csv
 
-# folder  
+# folder
 /database/
 /db/
 /output/
