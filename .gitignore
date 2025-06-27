@@ -58,4 +58,5 @@ __pycache__
 .DS_Store
 Thumbs.db
 save_git.sh
-
+commandLine_rerun-incomplete.sh
+commandLine.sh
