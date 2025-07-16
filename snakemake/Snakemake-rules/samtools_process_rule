@@ -11,6 +11,6 @@ rule samtools_process:
         """
         docker_wrapper -c "samtools view -b -o {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}.bam {input.sam}" &&
         docker_wrapper -c "samtools sort -n -o {output.out1}  {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}.bam" &&
-        docker_wrapper -c \'samtools flagstat {input}\' -o {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_statsAlign.txt 2>&1 | tee -a {log}
+        docker_wrapper -c \'samtools flagstat {input}\' -o {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}_FeatureCount_statsAlign.txt 2>&1 | tee -a {log}
         rm  {wildcards.prefix}/{wildcards.sample}/{wildcards.sample}.bam 
         """

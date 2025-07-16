@@ -83,7 +83,7 @@
         "OPTIONS": "-t 8 --careful"
     },
     "star": {
-        "OPTIONS": "--limitBAMsortRAM 10000000000 --runThreadN 8 --readFilesCommand zcat --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts"
+        "OPTIONS": "--sjdbGTFfeatureExon CDS --limitBAMsortRAM 10000000000 --runThreadN 8 --readFilesCommand zcat --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts"
     },
     "seqkit": {
         "OPTIONS": ""
@@ -92,6 +92,6 @@
         "OPTIONS": "-task megablast -num_threads 8 -evalue 10e-10 -outfmt \"7 qseqid sseqid sstart send evalue bitscore slen staxids\" -max_target_seqs 1 -max_hsps 1"
     },
     "featurecounts": {
-        "OPTIONS": "-T 4 -P -g gene_id"
+        "OPTIONS": "-O -p -T 4 -g gene_id -t CDS"
     }
 }

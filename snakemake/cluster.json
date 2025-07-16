@@ -63,6 +63,13 @@
      "mem": 4,
      "image": "sequoia-docker-tools/samtools:1.11-1"
   },
+    "samtools_flagstat": {
+     "name": "samtools_flagstat",
+     "tags": "snakemake,samtools_flagstat",
+     "cpu": 1,
+     "mem": 1,
+     "image": "sequoia-docker-tools/samtools:1.11-1"
+  },
   "spades": {
     "name": "spades",
     "tags": "snakemake,spades",
