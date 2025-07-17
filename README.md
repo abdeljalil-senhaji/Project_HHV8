@@ -54,7 +54,7 @@ This project aims to:
 ### Python environment:
 ```bash
 pandas numpy matplotlib seaborn scikit-learn pydeseq2 jupyter
-
+```
 ## 📨 Contact
 
 👤 Abdeljalil Senhaji
