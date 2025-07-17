@@ -1,4 +1,5 @@
 # 🧬 Project_HHV8
+[![Documentation](https://img.shields.io/badge/Documentation-github-brightgreen.svg?style=for-the-badge)](https://github.com/abdeljalil-senhaji/Project_HHV8)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **Project_HHV8** (Viral RNA-seq Study) is a bioinformatics project focused on the analysis of RNA-seq data targeting viral gene expression, particularly from HHV-8, using high-throughput sequencing data.
