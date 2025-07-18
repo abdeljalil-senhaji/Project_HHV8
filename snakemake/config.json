@@ -92,6 +92,6 @@
         "OPTIONS": "-task megablast -num_threads 8 -evalue 10e-10 -outfmt \"7 qseqid sseqid sstart send evalue bitscore slen staxids\" -max_target_seqs 1 -max_hsps 1"
     },
     "featurecounts": {
-        "OPTIONS": "-O -p -T 4 -g gene_id -t CDS"
+        "OPTIONS": "-p -T 4 -g gene_id -t exon,CDS"
     }
 }

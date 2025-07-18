@@ -1,4 +1,4 @@
-### /usr/lib/rna-star/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 4   --genomeDir /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/hhv8_star_index   --genomeFastaFiles /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/NC_009333.1.fasta      --genomeSAindexNbases 6   --sjdbGTFfile /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/NC_009333.1.gtf   --sjdbOverhang 100
+### /usr/lib/rna-star/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 4   --genomeDir /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/hhv8_star_index   --genomeFastaFiles /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/NC_009333.1.fasta      --genomeSAindexNbases 6   --sjdbGTFfile /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/NC_009333.1.gtf   --sjdbGTFfeatureExon CDS   --sjdbOverhang 100
 ### GstrandBit 32
 versionGenome	2.7.4a
 genomeType	Full
@@ -12,8 +12,8 @@ sjdbOverhang	100
 sjdbFileChrStartEnd	- 
 sjdbGTFfile	/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/ref_HHV8_index/NC_009333.1.gtf
 sjdbGTFchrPrefix	-
-sjdbGTFfeatureExon	exon
+sjdbGTFfeatureExon	CDS
 sjdbGTFtagExonParentTranscript	transcript_id
 sjdbGTFtagExonParentGene	gene_id
 sjdbInsertSave	Basic
-genomeFileSizes	262948 1144848
+genomeFileSizes	265360 1164648
