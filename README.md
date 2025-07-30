@@ -8,7 +8,7 @@
 
 ## 📁 Project Structure
 Project_VRS/
-├── data/ # Raw data (FASTQ, genomes, annotations)
+├── data/ # Raw data (fastq, genomes, annotations)
 ├── results/ # Alignment results (BAM, counts, PCA, DEG)
 ├── scripts/ # Analysis scripts (Python, R, Snakemake)
 ├── notebooks/ # Jupyter Notebooks for exploratory analysis
