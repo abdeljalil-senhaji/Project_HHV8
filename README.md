@@ -44,9 +44,9 @@ This project aims to:
 
 - RNA-seq alignment using **STAR**
 - Gene counting with **featureCounts**
-- Data normalization: `logCPM`, `RPKM`, `VST`, `rlog`
+- Data normalization: `logCPM`, `RPKM`, `VST`, `Rlog`
 - Visualization: **PCA**, heatmap, clustering
-- Differential expression analysis (if experimental groups are defined)
+- Differential expression analysis ( if experimental groups are defined )
 - Exploration of viral genes (e.g., **LANA**)
 
 ---
