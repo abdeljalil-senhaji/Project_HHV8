@@ -7,6 +7,5 @@ rule extract_info:
         "{prefix}/{sample}/logs/{sample}_{fungi_parasite}_extractInfo_fun_par.log"
     params:
         script = config["script_pip"]["extract_info_blast"]
-        #sqlite = config["general_informations"]["SQLITE"]
     shell:
         '{params.script} -i {input.inputPath} -o {output.outputPath}  | tee -a {log}'
