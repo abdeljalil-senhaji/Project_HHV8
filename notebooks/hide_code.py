@@ -9,3 +9,4 @@ class CustomHTMLExporter(HTMLExporter):
 
 exporter = CustomHTMLExporter()
 #exit
+#close
