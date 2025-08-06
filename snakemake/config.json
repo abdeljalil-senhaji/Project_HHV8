@@ -1,5 +1,5 @@
 {
-    "description": "This config file is designed to run pipeline RNA-seq.",
+    "description": "This config file is designed to run pipeline RNAseq.",
     "author": "Abdeljalil",
     "general_path":
     {
