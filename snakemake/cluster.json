@@ -95,7 +95,7 @@
     "name": "blast",
     "tags": "snakemake,blast",
     "cpu": 8,
-    "mem": 16,
+    "mem": 10,
     "image": "sequoia-docker-tools/blast:2.12.0-1"
   },
   "featurecounts": {
