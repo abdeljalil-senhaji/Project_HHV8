@@ -24,7 +24,7 @@ include: rulePath+"/featurecounts_rule"
 #============================= RECUP SAMPLES INFORMATIOS =================================#
 
 mate_ids = ["R1","R2"]
-
+2mate_ids = ["R3" , "R4"]
 
 sample_ids = []
 directory = '/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/data'
