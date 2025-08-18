@@ -1,2 +1,2 @@
-#sh  commandline
+#sh  command line
 godjob create -n pipeline_meta -t snakemake,pipeline_meta --external_image -v home -v scratch -v annotations -c 1 -r 1 -i sequoia-docker-tools/snakemake_dot:1.0.0 --cmd  "snakemake -s /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/snakefile --configfile /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/config.json --cluster-config /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/cluster.json --rulegraph | dot -Tsvg > /scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/images/graph_rule.svg"
