@@ -21,10 +21,11 @@ include: rulePath+"/samtools_flagstat_rule"
 include: rulePath+"/bwa_mem_rule"
 include: rulePath+"/samtools_process_rule"
 include: rulePath+"/featurecounts_rule"
+
 #============================= RECUP SAMPLES INFORMATIOS =================================#
 
 mate_ids = ["R1","R2"]
-2mate_ids = ["R3" , "R4"]
+#2mate_ids = ["R3" , "R4"]
 
 sample_ids = []
 directory = '/scratch/recherche/asenhaji/projet_HHV8/pipeline_analysis/snakemake/data'
@@ -47,6 +48,7 @@ for sample_id in os.listdir(directory) :
 #star = expand((output_path+"/{sample_id}/{sample_id}_Aligned.sortedByCoord.out.bam"),sample_id=sample_ids),
 samtools_flagstat = expand(output_path+"/{sample_id}/{sample_id}_STAR_statsAlign.txt", sample_id=sample_ids),
 featurecounts = expand((output_path+"/count_featurecounts/{sample_id}_counts.txt"),sample_id=sample_ids)
+
 #=================================================== Rule all ==================================================#
 
 rule all:
