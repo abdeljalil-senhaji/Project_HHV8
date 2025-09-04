@@ -1,4 +1,4 @@
-# 🧬 Project_HHV8
+# Project_HHV8
 [![Documentation](https://img.shields.io/badge/Documentation-github-brightgreen.svg?style=for-the-badge)](https://github.com/abdeljalil-senhaji/Project_HHV8)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 Project_VRS/
 ├── data/ # Raw data (fastq, genomes, annotations)
 ├── results/ # Alignment results (BAM, counts, PCA, DEG)
@@ -18,7 +18,7 @@ Project_VRS/
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - **STAR**: RNA-seq alignment and gene quantification
 - **featureCounts**: Read counting per gene
@@ -29,7 +29,7 @@ Project_VRS/
 
 ---
 
-## 📌 Goals
+##  Goals
 
 This project aims to:
 - Analyze viral gene expression (e.g., HHV-8) from RNA-seq data
@@ -40,7 +40,7 @@ This project aims to:
 
 ---
 
-## 🧪 Analysis Highlights
+##  Analysis Highlights
 
 - RNA-seq alignment using **STAR**
 - Gene counting with **featureCounts**
@@ -51,14 +51,16 @@ This project aims to:
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 ### Python environment:
 ```bash
 pandas numpy matplotlib seaborn scikit-learn pydeseq2 jupyter
 ```
-## 📨 Contact
+## Contact
 
-👤 Abdeljalil Senhaji Rachik
-📧 senhajirachikabdeljalil@gmail.com
-🐙 GitHub
+Abdeljalil Senhaji Rachik
+
+senhajirachikabdeljalil@gmail.com
+
+GitHub
