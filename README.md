@@ -7,16 +7,18 @@
 ---
 
 ##  Project Structure
-Project_VRS/
-├── data/ # Raw data (fastq, genomes, annotations)
-├── results/ # Alignment results (BAM, counts, PCA, DEG)
-├── scripts/ # Analysis scripts (Python, R, Snakemake)
-├── notebooks/ # Jupyter Notebooks for exploratory analysis
-├── reports/ # Analysis reports, figures
-├── README.md 
-└── Snakefile # Snakemake pipeline
 
----
+```bash
+Project_VRS/
+├── data/      # Raw data (fastq, genomes, annotations)
+├── results/   # Alignment results (BAM, counts, PCA, DEG)
+├── scripts/   # Analysis scripts (Python, R, Snakemake)
+├── notebooks/ # Jupyter Notebooks for exploratory analysis
+├── reports/   # Analysis reports, figures
+├── README.md 
+└── Snakefile  # Snakemake pipeline
+``` 
+
 
 ## Technologies Used
 
@@ -59,8 +61,6 @@ pandas numpy matplotlib seaborn scikit-learn pydeseq2 jupyter
 ```
 ## Contact
 
-Abdeljalil Senhaji Rachik
+- Abdeljalil Senhaji Rachik
+- senhajirachikabdeljalil@gmail.com
 
-senhajirachikabdeljalil@gmail.com
-
-GitHub
